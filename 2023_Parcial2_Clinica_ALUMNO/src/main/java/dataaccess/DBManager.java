@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBManager {
 
-	private Connection connection = null;
+	private static Connection connection = null;
 	
 	public DBManager(String _driver, String _url, String _username, String _password) {
 		super();
@@ -23,7 +23,7 @@ public class DBManager {
 		}
 	}
 	
-	public Connection getConnection() {
+	public static Connection getConnection() {
 		return connection;
 	}
 	
