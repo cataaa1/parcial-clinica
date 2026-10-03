@@ -23,7 +23,7 @@ public class DBManager {
 		}
 	}
 	
-	public static Connection getConnection() {
+	public Connection getConnection() {
 		return connection;
 	}
 	

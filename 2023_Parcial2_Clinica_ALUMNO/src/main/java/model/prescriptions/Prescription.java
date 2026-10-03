@@ -1,5 +1,6 @@
 package model.prescriptions;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -50,7 +51,9 @@ public abstract class Prescription implements Comparable {
 
 	public void setProfessional(String professional) {
 		this.professional = professional;
-	}	
+	}
+
+	public abstract BigDecimal getPrescriptionCost();
 	
 	@Override
 	public int compareTo(Object o) {
